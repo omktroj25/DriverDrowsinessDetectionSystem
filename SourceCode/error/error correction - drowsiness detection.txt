@@ -1,0 +1,16 @@
+
+
+Error Correction for Right and Left Eye
+
+
+Right eye : Replace "rpred = model.predict_classes(r_eye)" or Line 53 
+
+predict_x=model.predict(r_eye) 
+rpred=np.argmax(predict_x,axis=1)
+
+
+
+Left eye : Replace "lpred = model.predict_classes(l_eye)" or Line 68
+
+predict_x=model.predict(l_eye)
+lpred=np.argmax(predict_x,axis=1)
